@@ -1,0 +1,91 @@
+.nav {
+    background-color: whitesmoke;
+    border-top: 1px solid rgba(0, 0, 0, 0.2) ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing:border-box;
+   
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+  
+    padding: 20px 50px;
+}
+.nav__link {
+    color: #2F363E;
+    position: relative;
+}
+
+@keyframes notificationAnimation{
+    0% {
+        transform:none;
+
+    }
+    50%
+    {
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+.nav_notification {
+
+    position: absolute;
+    right: -15px;
+    top: -20px;
+    animation:notificationAnimation 3s ease-in-out infinite;
+    
+}
+.nav_notification4 {
+    background-color:tomato;
+    width:6px;
+    height:6px;
+    border-radius: 50%;
+    position:absolute;
+    left:34px;
+}
+
+
+.nav_notification5 {
+    background-color:tomato;
+    width:6px;
+    height:6px;
+    border-radius: 50%;
+    position:absolute;
+    right:0px;
+    bottom:20px;
+}
+
+@keyframes appearBtnAnimation {
+    from {
+        
+        opcity:0;
+    }
+    to {
+        opacity:1;
+        transform: none;
+    }
+}
+
+.nav__btn {
+    transform: translateY(80px);
+    opacity:0;
+animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2){
+animation-delay: 0.2s;
+}
+.nav__btn:nth-child(3){
+animation-delay: 0.5s;
+
+}
+.nav__btn:last-child {
+animation-delay: 0.8s;
+
+}
