@@ -1,2 +1,3 @@
 # kokoa-clone
-cloning project
+
+CSS got so much better
